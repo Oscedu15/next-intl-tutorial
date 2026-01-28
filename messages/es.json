@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "Página de Inicio",
+    "description": "Bienvenido a la pagina de inicio de nuestra aplicacion.",
+    "cta": "Empezar Ahora"
+  },
+  "AboutPage": {
+    "title": "Acerca de",
+    "description": "Pagina de Acerca de",
+    "team": "Nuestro Equipo"
+  }
+}

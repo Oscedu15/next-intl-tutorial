@@ -1,0 +1,12 @@
+{
+  "HomePage": {
+    "title": "Home Page",
+    "description": "Welcome to the home page of our application.",
+    "cta": "Start Now"
+  },
+  "AboutPage": {
+    "title": "About Page",
+    "description": "About Page",
+    "team": "Our Team"
+  }
+}
