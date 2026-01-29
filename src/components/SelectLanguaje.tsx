@@ -14,7 +14,7 @@ export const SelectLanguaje = () => {
   };
   return (
     <select
-      className="bg-white rounded px-2 py-1 text-black font-medium"
+      className="bg-white rounded px-2 py-1 cursor-pointer text-black font-medium"
       onChange={(e) => changeLanguage(e.target.value)}
       value={currentLocale}
     >
@@ -23,6 +23,9 @@ export const SelectLanguaje = () => {
       </option>
       <option value="es" className="">
         es Español
+      </option>
+      <option value="de" className="">
+        de Deutsch
       </option>
     </select>
   );

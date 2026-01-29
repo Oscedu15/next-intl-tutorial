@@ -1,24 +1,34 @@
+import { getTranslations } from "next-intl/server";
 import { Link } from "../i18n/navigation";
 import { SelectLanguaje } from "./SelectLanguaje";
 
-export const Header = () => {
+export async function Header() {
+  // 1. Cargamos las traducciones.
+  // Puedes usar namespaces como "HomePage" o "AboutPage"
+  // o crear uno específico llamado "Navigation" en tus JSON.
+  const tHome = await getTranslations("HomePage");
+  const tAbout = await getTranslations("AboutPage");
+
   return (
-    <header className="container px-4 mx-auto mb-7 flex justify-between">
+    <nav className="container px-4 mx-auto mb-7 flex justify-between">
+      {/* 2. El Link mantiene el idioma actual automáticamente */}
       <div className="flex items-center gap-5">
         <Link
           href="/"
-          className="text-xl font-medium hover:underline hover:font-bold"
+          className="hover:text-yellow-400 transition-colors font-medium"
         >
-          Home
+          {/* 3. El texto dentro del Link ahora es dinámico */}
+          {tHome("title")}
         </Link>
+
         <Link
           href="/about"
-          className="text-xl font-medium hover:underline hover:font-bold"
+          className="hover:text-yellow-400 transition-colors font-medium"
         >
-          About
+          {tAbout("title")}
         </Link>
       </div>
       <SelectLanguaje />
-    </header>
+    </nav>
   );
-};
+}

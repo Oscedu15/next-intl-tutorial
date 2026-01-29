@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "titleNav":"",
+    "title": "Startseite",
+    "description": "Willkommen auf der Startseite unserer Anwendung.",
+    "cta": "Jetzt anfangen"
+  },
+  "AboutPage": {
+    "title": "Über uns",
+    "description": "Über uns Seite",
+    "team": "Unser Team"
+  }
+}
